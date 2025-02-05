@@ -76,11 +76,7 @@ npx hardhat test
 ## 📜 License
 This project is licensed under the **MIT License**.
 
-![alt text](image.png)
 
-![alt text](image-1.png)
-
-![alt text](image-2.png)
 ---
 🚀 **Happy Coding!**
 
