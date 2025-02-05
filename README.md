@@ -1,28 +1,86 @@
-# Decentralized Voting Application
+# React Voting Application
 
-This is a demo application to implement voting in solidity smart contract using ReactJS. 
+## 📌 Project Overview
+The **React Voting Application** is a decentralized voting system built using **React.js**, **Hardhat**, and **Solidity**. It allows users to securely cast votes on the blockchain while ensuring transparency and integrity.
 
-[Youtube Tutorial](https://youtu.be/eCn6mHTpuM0)
+## 🚀 Features
+- 🔐 Secure blockchain-based voting
+- 📊 Real-time vote counting
+- 📜 Smart contract integration using Hardhat
+- 🎨 Responsive UI with React.js
 
-## Installation
+## 📂 Folder Structure
+```
+React-Voting-Application/
+├── contracts/          # Solidity smart contracts
+├── scripts/            # Deployment scripts
+├── src/                # React frontend code
+├── test/               # Smart contract tests
+├── public/             # Public assets
+├── hardhat.config.js   # Hardhat configuration
+├── package.json        # Node dependencies
+└── README.md           # Project documentation
+```
 
-After you cloned the repository, you want to install the packages using
+## 🛠 Installation & Setup
+### Prerequisites
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/)
+- [MetaMask](https://metamask.io/)
+- [Hardhat](https://hardhat.org/)
 
-```shell
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/your-username/React-Voting-Application.git
+cd React-Voting-Application
+```
+
+### 2️⃣ Install Dependencies
+```sh
 npm install
 ```
 
-You first need to compile the contract and upload it to the blockchain network. Run the following commands to compile and upload the contract.
-
-```shell
-npx hardhat compile
-npx hardhat run --network volta scripts/deploy.js
+### 3️⃣ Set Up Environment Variables
+Create a `.env` file and add:
+```
+VOLTA_URL=https://volta-rpc.energyweb.org/
+PRIVATE_KEY=your_private_key_here
 ```
 
-Once the contract is uploaded to the blockchain, copy the contract address and copy it in the .env file. You can also use another blockchain by writing the blockchain's endpoint in hardhat-config.
+### 4️⃣ Compile & Deploy Smart Contracts
+```sh
+npx hardhat compile
+npx hardhat node
+npx hardhat run scripts/deploy.js --network localhost
+```
 
-Once you have pasted your private key and contract address in the .env file, simply run command
-
-```shell
+### 5️⃣ Run the Frontend
+```sh
 npm start
 ```
+The app will be available at **http://localhost:3000**.
+
+## 🧪 Running Tests
+To run smart contract tests:
+```sh
+npx hardhat test
+```
+
+## 🤝 Contributing
+1. **Fork** the repo
+2. **Create a new branch** (`feature/your-feature`)
+3. **Commit changes** (`git commit -m "Added new feature"`)
+4. **Push to GitHub** (`git push origin feature/your-feature`)
+5. **Submit a Pull Request**
+
+## 📜 License
+This project is licensed under the **MIT License**.
+
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+---
+🚀 **Happy Coding!**
+
